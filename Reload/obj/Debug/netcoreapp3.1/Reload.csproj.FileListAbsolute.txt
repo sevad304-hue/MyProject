@@ -1,0 +1,11 @@
+D:\Reload\Reload\bin\Debug\netcoreapp3.1\Reload.exe
+D:\Reload\Reload\bin\Debug\netcoreapp3.1\Reload.deps.json
+D:\Reload\Reload\bin\Debug\netcoreapp3.1\Reload.runtimeconfig.json
+D:\Reload\Reload\bin\Debug\netcoreapp3.1\Reload.runtimeconfig.dev.json
+D:\Reload\Reload\bin\Debug\netcoreapp3.1\Reload.dll
+D:\Reload\Reload\bin\Debug\netcoreapp3.1\Reload.pdb
+D:\Reload\Reload\obj\Debug\netcoreapp3.1\Reload.csprojAssemblyReference.cache
+D:\Reload\Reload\obj\Debug\netcoreapp3.1\Reload.AssemblyInfoInputs.cache
+D:\Reload\Reload\obj\Debug\netcoreapp3.1\Reload.AssemblyInfo.cs
+D:\Reload\Reload\obj\Debug\netcoreapp3.1\Reload.dll
+D:\Reload\Reload\obj\Debug\netcoreapp3.1\Reload.pdb
