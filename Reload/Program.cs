@@ -13,7 +13,9 @@ namespace LearningApp
             //Task5.Lengt();
             //Task6.Convert();
             //Task7.Text();
-            Task8.NameFamily();
+            //Task8.NameFamily();
+            //Example1.Example();
+            Task9.Filter();
         }
     }
 }
