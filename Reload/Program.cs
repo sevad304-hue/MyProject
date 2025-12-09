@@ -17,7 +17,8 @@ namespace LearningApp
             //Example1.Example();
             //Task9.Filter();
             //Task10.Normalization();
-            Task11.Repeat();
+            //Task11.Repeat();
+            Task12.Estimation();
         }
     }
 }
