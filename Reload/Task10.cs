@@ -1,5 +1,5 @@
 using System;
-
+using System.Linq;
 
 namespace LearningApp
 {
@@ -7,20 +7,16 @@ namespace LearningApp
     {
         public static void Normalization()
         {
-            float max=0;
             float[] stats = { 2.5f, 7.3f, 3.1f, 10f };
-            for (int i = 0; i < stats.Length; i++)
+           // float max=stats[0];
+            float max = stats.Max();
+           /* foreach (var t in stats)
             {
-                for (int j = i + 1; j < stats.Length; j++)
+                if (max < t)
                 {
-                    if (stats[j] > stats[i])
-                    {
-                        max = stats[j];
-                        
-                    }
-                    
+                    max = t;
                 }
-            }
+            }*/
             Console.WriteLine($"{max}");
             float[] split = new float[stats.Length];
             for (int i = 0; i < stats.Length; i++)
