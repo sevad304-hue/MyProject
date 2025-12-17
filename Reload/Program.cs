@@ -1,24 +1,36 @@
 ﻿using System;
 
-namespace LearningApp
+
+namespace Reload
 {
     class Program
     {
         public static void Main(string[] args)
         {
-            //Task1.Calculate();
-            //Task2.Temperatur();
-            //Task3.Cost();
-            //Task4.AverageValue();
-            //Task5.Lengt();
-            //Task6.Convert();
-            //Task7.Text();
-            //Task8.NameFamily();
-            //Example1.Example();
-            //Task9.Filter();
-            //Task10.Normalization();
-            //Task11.Repeat();
-            Task12.Estimation();
+           
+            /*Console.Clear(); 
+            var result = Methods.Sum(12, -123); 
+            Console.WriteLine(result);
+            var result1 = Methods.Sum(23 , -54); 
+            Console.WriteLine(result1); 
+            var result2 = Methods.Sum(-800, 1225.4); 
+            Console.WriteLine(result2); 
+            var result3 = Methods.Discount(1000, 45); 
+            Console.WriteLine(result3); 
+            var result4 = Methods.Discount(500 , 35); 
+            Console.WriteLine(result4); 
+            var result5 = Methods.Discount(6000, 101);
+            Console.WriteLine(result5);*/
+            var result6 = Methods.Discount(6000, 25);
+            Console.WriteLine(result6);
+            Methods.Age(18);
+            double[] x = {1, -8, 3, 12, 5, 34};
+            Methods.Elements(x);
+            var result7 = Methods.MaxElements(x);
+            Console.WriteLine(result7);
+
+
+
         }
     }
 }
