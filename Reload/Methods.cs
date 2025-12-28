@@ -10,13 +10,10 @@ namespace Reload
         {
             if (cost < 0)
             {
-                
                 throw new ArgumentException("Не правильная цена");
-                
             }
             if (discount < -1 && discount > 101)
-            {
-            
+            { 
                 throw new ArgumentException("Не правильная скидка");
             }
             var pay = cost-cost * (discount / 100);
@@ -38,7 +35,7 @@ namespace Reload
         
         public static double MaxElements( double[] x)
         {
-            double max = 0;
+            double max = x[0];
             foreach (var i in x)
             {
                 if (i > max)
@@ -49,7 +46,46 @@ namespace Reload
             Console.Write($"\nМаксимальный элемент:");
             return max;
         }
+
+        public static void Raise(ref double x)
+        {
+            x++;
+            
+        }
+
+        public static void MaxMin(ref double max, ref double min)
+        { 
+            if (max < min)
+            {
+                double x = 0;
+                x = max;
+                max = min;
+                min = x;
+            }
+            Console.WriteLine($"Max: {max}");
+            Console.WriteLine($"Min: {min}");
+        }
+
+        public static void Median(params double[] nums)
+        {
+           Console.WriteLine(nums.Length);
+            if (nums.Length % 2 == 0)
+            {
+                var median = (nums[( nums.Length-1) / 2]+nums[( nums.Length+1) / 2])/2;
+                Console.WriteLine($"Медиана чисел равна - {median}");
+            }
+            else
+            {
+                var median = nums[nums.Length/2];
+                Console.WriteLine($"Медиана чисел равна - {median}");
+            }
+
+         
+
+        }
         
+        
+
     }
     
     
