@@ -37,6 +37,10 @@ namespace Reload
             double min = 23;
             Methods.MaxMin(ref max, ref min);
             Methods.Median(12, 13, 14, 15, 55, 12, 54, 34, 24, 53, 34,8);
+            int z = Methods.SumNumbersOne(-52);
+            Console.WriteLine($"Сумма цифр числа - {z}");
+            int g = Methods.SumNumbersTwo(-52);
+            Console.WriteLine($"Сумма цифр числа - {g}");
         }
     }
 }

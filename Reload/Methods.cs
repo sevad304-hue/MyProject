@@ -79,12 +79,39 @@ namespace Reload
                 var median = nums[nums.Length/2];
                 Console.WriteLine($"Медиана чисел равна - {median}");
             }
-
-         
-
         }
+
+        public static int SumNumbersOne(int x)
+        {
+            if (x < 0) x = -x;
+            string xStr = Convert.ToString(x);
+            if (xStr.Length == 1)
+            {
+                return x=Convert.ToInt32(xStr);
+            }
+            var y = xStr[0]-'0';
+            x = Convert.ToInt32(y);
+            xStr= xStr.Substring(1);
+            int xq = Convert.ToInt32(xStr);
+            return x+SumNumbersOne(xq);
+        }
+
+         public static int SumNumbersTwo(int x)
+         {
+             if (x < 0) x = -x;
+             int y = 0;
+             string xStr = Convert.ToString(x);
+             for (int i = 0; i < xStr.Length; i++)
+             {
+                 y =y+Convert.ToInt32(xStr[i])-'0';
+             }
+             return y;
+         }
         
+            
         
+
+
 
     }
     
