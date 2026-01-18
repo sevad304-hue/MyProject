@@ -21,7 +21,7 @@ namespace Reload
             Console.WriteLine(result4); 
             var result5 = Methods.Discount(6000, 101);
             Console.WriteLine(result5);*/
-            var result6 = Methods.Discount(6000, 25);
+            /*var result6 = Methods.Discount(6000, 25);
             Console.WriteLine(result6);
             Methods.Age(18);
             double[] x = {-10, -8, -3, -12, -5, -34};
@@ -40,7 +40,10 @@ namespace Reload
             int z = Methods.SumNumbersOne(-52);
             Console.WriteLine($"Сумма цифр числа - {z}");
             int g = Methods.SumNumbersTwo(-52);
-            Console.WriteLine($"Сумма цифр числа - {g}");
+            Console.WriteLine($"Сумма цифр числа - {g}");*/
+            string y=Console.ReadLine();
+            Methods.PasswordVerification(y);
+            Methods.Purchase(Methods.TypeBuy.Soft);
         }
     }
 }

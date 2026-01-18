@@ -107,7 +107,56 @@ namespace Reload
              }
              return y;
          }
-        
+
+         public static bool PasswordVerification(string password)
+         {
+            bool MinSymphol() => password.Length >= 8;
+            bool NumbersPassword() 
+            { 
+                foreach (char x in password) 
+                {
+                    if (char.IsDigit(x))
+                        return true;
+                } 
+                return false;
+             }
+            bool LetterPassword() 
+            { 
+                foreach (char x in password) 
+                {
+                    if (char.IsLetter(x))
+                        return true;
+                } 
+                return false;
+            }
+            bool itog = MinSymphol() && NumbersPassword() && LetterPassword();
+            Console.WriteLine(itog);
+            return itog;
+         }
+
+         public enum TypeBuy
+         {
+             Hard,
+             Soft,
+             Ad,
+         }
+
+         public static void Purchase(TypeBuy type)
+         {
+             switch (type)
+             {
+                 case TypeBuy.Hard:
+                     Console.Write($"Тяжелый продукт");
+                     break;
+                 case TypeBuy.Soft:
+                     Console.Write($"Безалкогольный продукт");
+                     break;
+                 case TypeBuy.Ad:
+                     Console.Write($"Рекламный продукт");
+                     break;
+             }
+             
+         }
             
         
 
